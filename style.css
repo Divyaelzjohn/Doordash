@@ -1,8 +1,7 @@
-body{
-    font-variant-ligatures: no-common-ligatures;
+*{
     margin: 0px;
     padding: 0px;
-    border: none;
+    box-sizing: border-box;
 }
 .layermanager{
     /* kqrlsg */
@@ -10,13 +9,14 @@ body{
     z-index: 0;
 }
 .main{
-    border: none;
+    border: medium;
     margin-top: 16px;
     /* .zCCIu */
 }
 .i-main{
     /* IjbXLp */
     position: relative;
+    box-sizing: border-box;
 }
 .ii-main{
     /* litHNU,lmTISd */
@@ -29,6 +29,7 @@ body{
     column-gap: 8px;
     padding: 8px 8px;
     align-items: center;
+    overflow: hidden;
 }
 
 @font-face {
@@ -239,7 +240,10 @@ body{
     /* efIVhg,bKpFNW */
     background-image: url(img/hero_desktop.png);
     height: 550px;
-    padding: 0px 8px;
+    padding-top:0px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -625,8 +629,8 @@ body{
 }
 .logo-small{
     /* hMkEOl */
-    width: 50px;
-    height: 43px;
+    width: 60px;
+    height: 60px;
     border-radius:10px;
     border: 1px solid #f1f1f1;
     background-color: #fff;
@@ -729,8 +733,6 @@ body{
     justify-content: center;
     height: 100%;
     flex-direction: column;
-    /* padding: 0px;
-    margin-top: 10px ; */
     box-sizing: border-box;
 }
 .cnbdy{
@@ -739,13 +741,10 @@ body{
     width: 100%;
     min-width: 360px;
     max-width: 100%;
-    /* overflow-x: hidden; */
     box-sizing: border-box;
     flex-flow: row;
     padding: 16px 16px;
-    margin: 0px;
-    /* padding-left: 12px;
-    padding-top: 26px; */
+    /* margin: 0px; */
 }
 .cn{
     /* bvTdFb */
@@ -850,7 +849,6 @@ body{
 .box-fix{
     width: 100%;
 }
-
 .box1-img{
     /* gDXQrF */
     height: 180px;
@@ -868,9 +866,9 @@ body{
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
+    max-width: 90%;
     margin-top: 20px;
-    margin-bottom: 0px;
-    max-width: 90%;  
+    margin-bottom: 0px; 
     color: #191919;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -907,6 +905,7 @@ body{
     text-transform: none;
     display: block;
     padding: 0px;
+    white-space: nowrap;
 }
 .box1-des{
     /* bSPaJJ */
@@ -922,6 +921,7 @@ body{
     text-transform: none;
     display: block;
     padding: 0px;
+    margin-top: 10px;
 }
 .btn-box{
     /* tYgds */
@@ -957,7 +957,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 320px 20px 20px 20px;
-    min-width: 91%;
+    min-width: 90%;
     align-items: center;
 }
 .box2-img{
@@ -968,19 +968,21 @@ body{
 }
 .box2-des{
     /* bSPaJJ */
+    text-align: left;
     max-width: 100%;    
     font-family: 'norms';
     color: #191919;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 20px;
     letter-spacing: -0.01px;
     text-decoration: none;
     text-transform: none;
     display: block;
     margin: 0px;
     padding: 0px;
-    font-size: 14px;
-    font-weight: 500;
     margin-top: 10px;
-    line-height: 20px;
 }
 .ads{
     /* bVargu */
@@ -994,7 +996,6 @@ body{
     background-color: rgba(30,30,30,0.6);
     top: 0px;
     left: 0px;
-    margin-right: 0px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -1082,7 +1083,7 @@ body{
     width: 100%;
     background-color: rgb(254,241,238);
 }
-.rb-margin{
+.rb-mgn{
     /* TmhL,lnIroq */
     margin-left: 5%;
     margin-right: -10%;
@@ -1093,22 +1094,11 @@ body{
     align-items: center;
     box-sizing: border-box;
 }
-.rb-mgn{
-    margin-left: 5%;
-    margin-right: -10%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    min-width: 90%;
-    align-items: center;
-    max-width: 50px;
-    box-sizing: border-box;
-}
 .rb-img{
     /* height: 180px; */
     width: 100%;
 }
-.rbb-img{
+.rb-img img{
     /* gDXQrF */
     width: 100%;
     height: 180px;
@@ -1136,7 +1126,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-.alcohol-botton{
+.alcohol-button{
     margin-top: 10px;
     color: #191919;
     font-family: 'norms';
@@ -1296,7 +1286,7 @@ body{
 }
 .footmgn{
     /* cdAOCc  */
-    width: 390px;
+    width: 100%;
     background-color: #191919;
     display: flex;
     flex-direction: row;
@@ -1625,6 +1615,9 @@ body{
 .sign{
     display: none;
 }
-.searchh{
+.searchh,.rb-raw{
+    display: none;
+}
+.roseboxx{
     display: none;
 }
