@@ -40,6 +40,10 @@
     font-family: 'norms';
     src: url(font/TTNorms-Medium.woff2);
 }
+@font-face{
+    font-family: 'regular';
+    src: url(font/TTNorms-Regular.woff2);
+}
 .logo{
     /* HqIfF */
     align-self: center;
@@ -204,7 +208,8 @@
 }
 
 .button {
-    letter-spacing: -0.01;
+    font-family: 'norms2';
+    letter-spacing: -0.01px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -214,9 +219,8 @@
     border: none;
     background-color: #eb1700ff;
     color: #fff;
-    font-family: 'norms';
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 22px;
     text-align: center;
     text-decoration: none;
@@ -589,7 +593,8 @@
 }
 
 .cntu {
-    letter-spacing: -0.01;
+    font-family: 'norms2';
+    letter-spacing: -0.01px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -600,7 +605,6 @@
     border: none;
     background-color: #eb1700ff;
     color: #fff;
-    font-family: 'norms';
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -780,7 +784,6 @@
     display: block;
     margin: 0px;
     padding: 0px;
-
 }
 .texxt{
     /* fouIPx */
@@ -813,9 +816,9 @@
 .cn-txt{
     /* kwevNY */
     color: #eb1700;
-    font-family: 'norms';
+    font-family: 'norms2';
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 200;
     line-height: 20px;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -898,7 +901,8 @@
     margin-top: 10px;
     font-weight: 700;
     line-height: 22px;
-    max-width: 90%;   
+    width: 344px;
+    /* max-width: 90%;    */
     color: #191919;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -914,7 +918,7 @@
     font-weight: 500;
     line-height: 20px;
     margin-top: 10px;
-    max-width: 99%;   
+    max-width:100%;   
     color: #191919;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -974,7 +978,7 @@
     color: #191919;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 20px;
     line-height: 20px;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -1061,9 +1065,10 @@
 .rosebghd{
     /* gMYgEx,dtvoNG */
     text-align: center;
+    width: 300px;
     max-width: 100%;
     color: #191919;
-    font-family: 'norms';
+    font-family: 'norms2';
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -1129,7 +1134,7 @@
 .alcohol-button{
     margin-top: 10px;
     color: #191919;
-    font-family: 'norms';
+    font-family: 'norms2';
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
@@ -1194,10 +1199,19 @@
 }
 .ultxt{
     /* cnbCCA */
+    font-family: 'norms2';
     color: #191919;
     font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
 }
-.ultxt,.ultxt1,.nam,.footh2{
+.ultxt1,.nam,.footh2{
     font-family: 'norms';
     font-size: 16px;
     line-height: 22px;
@@ -1286,7 +1300,7 @@
 }
 .footmgn{
     /* cdAOCc  */
-    width: 100%;
+    width: 100vw;
     background-color: #191919;
     display: flex;
     flex-direction: row;
@@ -1430,7 +1444,7 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
-    padding: 32px 0;
+    padding: 32px;
 }
 .sec-3{
     /* eRuPEE */
@@ -1451,7 +1465,7 @@
     box-sizing: border-box;
 }
 .logotxt{
-    position: relative;
+    position: absolute;
     left: -10000px;
     top: auto;
     width: 1px;
@@ -1618,6 +1632,15 @@
 .searchh,.rb-raw{
     display: none;
 }
-.roseboxx{
+.rosebox768.box1-imgdesk,.box2-imgdesk{
     display: none;
+}
+.rb-row{
+display: none;
+}
+.desk-img{
+   display: none; 
+}
+.box1-img{
+    display: block;
 }

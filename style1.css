@@ -187,8 +187,8 @@
         margin-right: 64px;
     }
     .cn img{
-        height: 128px;
-        width: 128px;
+        height: 124px;
+        width: 124px;
     }
     .box1-pdg{
         flex-direction: row;
@@ -207,15 +207,9 @@
         flex-direction: row;
         gap: 60px;
         max-width: 1184px;
+        justify-content: center;
         box-sizing: border-box;
-     }
-     .box1-img{
-        height: 500px;
-        width: 294px;
-     }
-     .box2-img{
-        height: 500px;
-        width: 302px;
+        height: 504px;
      }
      .box1-margin{
         max-width: 400px;
@@ -226,6 +220,7 @@
      .heading2{
         font-size: 40px;
         line-height: 40px;
+        margin-top: 10px;
      }
      .heading3{
         font-size: 20px;
@@ -256,7 +251,15 @@
         align-items: center;
         justify-content: center;
     }
+    .Log-signin{
+        font-family: 'norms';
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.01px;
+        line-height: 20px;
+    }
     .rosebg{
+        height: 604px;
         flex-direction: row;
         justify-content: center;
         padding: 80px 20px 20px 20px;
@@ -305,10 +308,10 @@
     .rosebox{
        display: none;
     }
-    .roseboxx{
+    .rosebox768{
         flex-direction: column;
         align-items: center;
-        max-width: none;
+        width: 100%;
         overflow-x: none;
     }
     .rb-mgn{
@@ -344,6 +347,8 @@
     .rb-img img{
         height: 344px;
         width: 344px;
+        object-fit: cover;
+        object-position: center center;
     }
     .s-box1{
         text-align: center;
@@ -383,9 +388,6 @@
         font-size: 14px;
         margin-top: 20px;
     }
-    .footmgn{
-        width: 768px;
-    }
     .footh2{
         text-align: left;
     }
@@ -394,9 +396,11 @@
         text-align: left;
     }
     .s2padding{
+        flex: 1 1 0%;
         flex-direction: row;
          text-align: left;
          gap: 108px;
+         justify-content: space-between;
     }
     .sec-3{
         margin-top: 0px;
@@ -416,5 +420,164 @@
     }
     .sec1{
         height: 36px;
+    }
+    #qw{
+        display: block;
+    }
+    .desk-img{
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .box1-img{
+        display: none;
+     }
+     .box2-img{
+        display: none;
+     }
+    #sign-in{
+        display: none;
+    }
+    #s1p11,#s1p12{
+    display: none;
+}
+   
+}
+@media screen and (min-width:960px) {
+    .bgicononly img{
+        width: 42px;
+        height: 24px;
+    }
+    .icontext img{
+        width: 155px;
+        height: 18px;
+        margin-left: 4px;
+    }
+    .bg-container{
+        width: 672px;
+    }
+    .txt{
+        max-width: 750px;
+        font-size: 40px;    
+        line-height: 40px;
+        display: block;
+        white-space: nowrap;
+    }
+    .cont-section{
+        max-width: 408px;
+        height: 56px;
+    }
+    #sign{
+        display: none;
+    }
+    #sign-in{
+        display: block;
+    }
+    .icons > * + * {
+        margin-left: 2px;
+    }
+    .ads-mgn > div {
+        margin-top: 156px;
+    }
+    .rb-img{
+        height: 440px;
+    }
+    .rb-img img{
+        width: 440px;
+        height: 440px;
+        position: relative;
+    }.s-box1{
+        margin-top: 20px;
+    }
+     .rosebg{
+        height: 604px;
+     }
+    .rosebghd{
+        max-width: 450px;
+    }
+    .section2{
+        /* width: 920px; */
+        flex-direction: row;
+        display: flex;
+    }
+    .mob-goog{
+        justify-content: flex-end;
+    }
+    .lang-mgn1{
+        margin-bottom: 4px;
+    }
+    .line{
+        white-space: nowrap;
+    }
+    .s2padding{
+        gap: 12px;
+        flex: 1 1 0%;
+    }
+}
+@media screen and (min-width: 1184px){
+    .CNimg{
+        max-width: 1184px;
+    }
+    .cnpadd{
+        margin: 96px 0px;
+    }
+    .cnbody{
+        flex-direction: row;
+    }
+    .cnbdy{
+        flex-flow: column;
+    }
+    .cn{
+        margin-right: 64px;
+        display: flex;
+        justify-content: center;
+    }
+    .cn img{
+        height: 154px;
+        width: 154px;
+    }
+    .heading,.texxt{
+        text-align: center;
+    }
+    .texxt{
+        margin-top: 8px;
+    }
+    .cn-btn{
+        justify-content: center;
+    }
+    .cn-txt{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .rb-row{
+        align-items: center;
+    }
+    .rosebox768{
+        display: flex;
+        align-items: center;
+        background-color: rgb(254, 241, 238);
+    }
+    .rb-img{
+        height: 552px;
+        width: 552px;
+    }
+    .rb-img img{
+        height: 552px;
+        width: 552px;
+    }
+    .rbb-img{
+        height: 552px;
+        width: 552px;
+    }
+    .rb-box{
+        /* max-width: 50%; */
+        /* height: 614px; */
+        width: 592px;
+        height: 826px;
+    }
+    .topcity {
+        box-shadow:none;
+        border-bottom: 2px solid #191919;
     }
 }
