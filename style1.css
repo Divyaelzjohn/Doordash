@@ -79,7 +79,7 @@
     border: none;
     background-color: #eb1700ff;
     color: #fff;
-    font-family: 'norms';
+    font-family: 'norms2';
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -96,9 +96,9 @@
     position: relative;
     max-width: 100%;
     margin: 0px;
-    padding: 0px 12px;
+    padding: 0px 10px;
     display: inline-flex;
-    min-height: 40px;
+    height: 38px;
     width: auto;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@
     background-color: #fff;
     box-shadow: 0 0 0 1px #fff;
     color: #606060;
-    font-family: 'norms';
+    font-family: 'norms2';
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -220,7 +220,7 @@
      .heading2{
         font-size: 40px;
         line-height: 40px;
-        margin-top: 10px;
+        margin-top: 20px;
      }
      .heading3{
         font-size: 20px;
@@ -232,14 +232,12 @@
         font-size: 16px;
         line-height: 22px;
      }
-     
      .box2-des{
         margin-top: 20px;
         font-size: 16px;
         line-height: 22px;
      }
      .btn-box{
-    /* tYgds */
         margin-top: 30px;
     }     
     .btn-mrg{
@@ -252,7 +250,7 @@
         justify-content: center;
     }
     .Log-signin{
-        font-family: 'norms';
+        font-family: 'norms2';
         font-size: 14px;
         font-weight: 700;
         letter-spacing: -0.01px;
@@ -283,19 +281,6 @@
         padding-top: 60px;
         margin-bottom: -40px;
     }
-    .box4-img,.box6-img,.box7-img{
-        height: 500px;
-        object-fit: cover;
-    }
-    .box4-img{
-        width: 345px;
-    }
-    .box6-img{
-        width: 285px;
-    }
-    .box7-img{
-        width: 307px;
-    }
     .rosebg1{
         padding: 60px 20px 40px !important;
         justify-content: center;
@@ -303,16 +288,17 @@
     .rosebghd{
         font-size: 32px;
         line-height: 40px;
-        max-width: 500px;
+        width: 500px;
     }
     .rosebox{
        display: none;
     }
     .rosebox768{
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        overflow-x: none;
+        background-color: rgb(254, 241, 238);
     }
     .rb-mgn{
         max-width: 50%;
@@ -333,10 +319,11 @@
         flex-direction: column;
         padding: 20px;
         align-items: center;
+        margin: 0px;
     }
      .rb-row{
         display: flex;
-        background-color: rgb(254, 241, 238);
+        justify-content: center;
         flex-flow: wrap !important;
         width: 100%;
         max-width: 1184px;
@@ -344,18 +331,24 @@
     .roseboxx{
         display: contents;
     }
-    .rb-img img{
+    .rb-img{
+        position: relative;
+        width: 100%;
         height: 344px;
-        width: 344px;
+    }
+    .rb-img img{
+        inset: 0px;
+        width: 100%;
+        height: 344px;
         object-fit: cover;
         object-position: center center;
-    }
+    } 
     .s-box1{
         text-align: center;
         font-size: 40px;
         line-height: 40px;
     }
-    .box1-mgn > * > span {
+    .box1-mrgn > * > span {
         margin-top: 20px;
     }
     .ulpadding{
@@ -375,7 +368,7 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 22px;
-        max-width: 99%;   
+        max-width: 100%;   
         color: #191919;
         letter-spacing: -0.01px;
         text-decoration: none;
@@ -387,6 +380,7 @@
         font-weight: 500;
         font-size: 14px;
         margin-top: 20px;
+        font-family: 'norms';
     }
     .footh2{
         text-align: left;
@@ -407,16 +401,25 @@
         flex-direction: row;
     }
     .sec-2{
-        /* width: 150px; */
         padding: 0px 12px;
+        margin-bottom: 4px;
     }
     .section3{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        padding: 32px 0;
     }
     .lst1-txt,.lst-txt{
         white-space: nowrap;
+    }
+    .desk-img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+     .heading3{
+        width: 383px;
     }
     .sec1{
         height: 36px;
@@ -424,11 +427,9 @@
     #qw{
         display: block;
     }
-    .desk-img{
-        display: block;
+    .box-fix{
         width: 100%;
-        height: 500px;
-        object-fit: cover;
+        height: 504px;
     }
     .box1-img{
         display: none;
@@ -441,8 +442,7 @@
     }
     #s1p11,#s1p12{
     display: none;
-}
-   
+    }
 }
 @media screen and (min-width:960px) {
     .bgicononly img{
@@ -477,17 +477,10 @@
     .icons > * + * {
         margin-left: 2px;
     }
-    .ads-mgn > div {
-        margin-top: 156px;
+    .heading3{
+        width: 383px;
     }
-    .rb-img{
-        height: 440px;
-    }
-    .rb-img img{
-        width: 440px;
-        height: 440px;
-        position: relative;
-    }.s-box1{
+    .s-box1{
         margin-top: 20px;
     }
      .rosebg{
@@ -500,6 +493,12 @@
         /* width: 920px; */
         flex-direction: row;
         display: flex;
+    }
+    .rb-img{
+        height: 440px;
+    }
+    .rb-img img{
+        height: 440px;
     }
     .mob-goog{
         justify-content: flex-end;
@@ -514,6 +513,29 @@
         gap: 12px;
         flex: 1 1 0%;
     }
+     .rosebox768{
+        display: flex;
+        align-items: center;
+        background-color: rgb(254, 241, 238);
+    }
+     .topcity {
+        box-shadow:none;
+        border-bottom: 3px solid #191919;
+    }
+    .lang-mgn1{
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width:1024px) {
+    .rb-img{
+        height: 472px;
+    }
+    .rb-img img {
+        height: 472px;
+    }
+    .section3{
+        height: 96px;
+    }
 }
 @media screen and (min-width: 1184px){
     .CNimg{
@@ -521,6 +543,7 @@
     }
     .cnpadd{
         margin: 96px 0px;
+        padding: 12px;
     }
     .cnbody{
         flex-direction: row;
@@ -550,9 +573,6 @@
         font-size: 18px;
         line-height: 22px;
     }
-    .rb-row{
-        align-items: center;
-    }
     .rosebox768{
         display: flex;
         align-items: center;
@@ -560,24 +580,22 @@
     }
     .rb-img{
         height: 552px;
-        width: 552px;
     }
     .rb-img img{
         height: 552px;
-        width: 552px;
-    }
-    .rbb-img{
-        height: 552px;
-        width: 552px;
-    }
-    .rb-box{
-        /* max-width: 50%; */
-        /* height: 614px; */
-        width: 592px;
-        height: 826px;
+        width: 100%;
     }
     .topcity {
         box-shadow:none;
         border-bottom: 2px solid #191919;
+    }
+    .sec-2{
+        margin-bottom: 0px;
+    }
+    .section3{
+        height: 96px;
+    }
+    .sec1{
+        height: 32px;
     }
 }
