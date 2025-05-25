@@ -79,7 +79,7 @@
     border: none;
     background-color: #eb1700ff;
     color: #fff;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -112,7 +112,7 @@
     background-color: #fff;
     box-shadow: 0 0 0 1px #fff;
     color: #606060;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -250,7 +250,7 @@
         justify-content: center;
     }
     .Log-signin{
-        font-family: 'norms2';
+        font-family: 'bold';
         font-size: 14px;
         font-weight: 700;
         letter-spacing: -0.01px;

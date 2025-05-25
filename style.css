@@ -8,29 +8,29 @@
     z-index: 0;
 }
 .main{
-    border: medium;
+    border: none;
     margin-top: 16px;
+    -webkit-box-flex:1;
+    flex-grow: 1;
+    border-bottom: 1px solid #E7E7E7;
+    max-width: 100%;
+    padding: 8px;
     height: 80px;
 }
 .i-main{
     position: relative;
-    box-sizing: border-box;
 }
 .ii-main{
-    box-sizing: border-box;
     max-width: 100%;
     width: 100%;
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto 1fr auto;
     column-gap: 8px;
-    padding: 8px 8px;
-    align-items: center;
-    overflow: hidden;
 }
 
 @font-face {
-    font-family: 'norms2';
+    font-family: 'bold';
     src: url(font/TTNorms-Bold.woff2);
 }
 @font-face {
@@ -44,10 +44,16 @@
 .logo{
     align-self: center;
     grid-area: 2/1;
-    box-sizing: border-box;
 }
 .logo-container{
     color: #606060;
+    font-family: 'bold';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: none;
+    text-align: left;
+    display: block;
     max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -57,11 +63,18 @@
 .logo-img{
     max-width: 100%;
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
-    justify-content: center;
+    -webkit-box-pack:flex;
+    justify-content: flex-start;
     flex-direction: row;
 }
 .img{
+    border-radius: 12px;
+    border-width: 1px;
+    border: 1px solid #f1f1f1;
+    width: 64px;
+    height: 64px;
     flex-shrink: 0;
 }
 .logo-border{
@@ -72,16 +85,17 @@
     line-height: 10px;
 }
 .head-main{
+    flex-grow: 1;
     overflow: hidden;
     grid-area: 2/2;
     max-width: 100%;
     display: block;
-    white-space: nowrap;
+    /* white-space: nowrap;
     text-overflow: ellipsis;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 .head-main > * + *{
-    margin-top: 0px;
+    margin-top: 0px !important;
 }
 .container{
     font-family: 'norms';
@@ -90,7 +104,6 @@
     letter-spacing: -0.01px;
     text-decoration: none;
     text-transform: none;
-    overflow-X: hidden;
     color: #606060;
     font-family: 'norms';
     font-size: 14px;
@@ -99,6 +112,7 @@
     max-width: 100%;
     white-space: normal;
     text-overflow: ellipsis;
+    overflow: hidden;
     flex-grow: 1;
     min-width: 0;
 }
@@ -121,7 +135,7 @@
 }
 .f-txt{
     color: #191919;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -192,7 +206,7 @@
 }
 
 .button {
-    font-family: 'norms2';
+    font-family: 'bold';
     letter-spacing: -0.01px;
     display: inline-flex;
     align-items: center;
@@ -290,7 +304,7 @@
     margin-bottom: 24px;
 }
 .txt{
-    font-family: 'norms2';
+    font-family: 'bold';
     font-weight: 900;
     font-size: 32px;
     max-width: 350px;
@@ -507,7 +521,7 @@
 }
 .Login,.Log{
     color: currentColor;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-weight: 700;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -541,7 +555,7 @@
 }
 
 .cntu {
-    font-family: 'norms2';
+    font-family: 'bold';
     letter-spacing: -0.01px;
     display: inline-flex;
     align-items: center;
@@ -602,7 +616,7 @@
 }
 .f-txt2{
     color: #191919;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 18px;
     line-height: 20px;
     display: block;
@@ -703,7 +717,7 @@
 }
 .heading{
     color: #191919;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
@@ -743,7 +757,7 @@
 }
 .cn-txt{
     color: #eb1700;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 14px;
     font-weight: 200;
     line-height: 20px;
@@ -775,6 +789,7 @@
 }
 .box-fix{
     width: 100%;
+    height: 184px;
 }
 .box1-img,.box2-img{
     width: 100%;
@@ -786,7 +801,7 @@
     flex-direction: column;
 }
 .heading2{
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -801,7 +816,7 @@
     padding: 0px;
 }
 .s-box1{
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -816,7 +831,7 @@
     padding: 0px;
 }
 .heading3{
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 18px;
     margin-top: 10px;
     font-weight: 700;
@@ -972,7 +987,7 @@
     width: 300px;
     max-width: 100%;
     color: #191919;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -1028,7 +1043,7 @@
 .alcohol-button{
     margin-top: 10px;
     color: #191919;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
@@ -1047,7 +1062,7 @@
     margin-bottom: 20px;
     margin-top: 0px;
     color: #191919;
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
@@ -1086,7 +1101,7 @@
     transition: background-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
 }
 .ultxt{
-    font-family: 'norms2';
+    font-family: 'bold';
     color: #191919;
     font-weight: 700;
     font-size: 16px;
@@ -1145,7 +1160,7 @@
     box-sizing: border-box;
 }
 .seemore{
-    font-family: 'norms2';
+    font-family: 'bold';
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
