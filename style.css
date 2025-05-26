@@ -44,6 +44,8 @@
 .logo{
     align-self: center;
     grid-area: 2/1;
+    height: 64px;
+    width: 64px;
 }
 .logo-container{
     color: #606060;
@@ -347,9 +349,6 @@
 .s-container{
     border-radius: 12px;
 }
-.s-container > * > * > * > * > div{
-    border-radius:32px;
-}
 .s-container2{
     width: 100%;
 }
@@ -369,13 +368,16 @@
     z-index: 1;
     padding: 6px 16px;
     border: none;
+    border-radius: 9999px;
     box-shadow: insert 0 0 0 1px #f1f1f1;
     background-color: #fff;
 }
-.serach-bar{
+.search-bar{
     max-width: 100%;
     margin-right: 12px;
     box-sizing: border-box;
+    border-radius:32px;
+    height: 24px;
 }
 .s-settings{
     display: flex;
@@ -579,7 +581,7 @@
 }
 .padding{
     border-radius: 12px;
-    border: 0px solid #f1f1f1;
+    border: 1px solid #f1f1f1;
     padding: 20px;
     background-color: #f7f7f7;
     max-width: 100%;
@@ -759,7 +761,7 @@
     color: #eb1700;
     font-family: 'bold';
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -836,7 +838,7 @@
     margin-top: 10px;
     font-weight: 700;
     line-height: 22px;
-    width: 344px;
+    /* width: 344px; */
     color: #191919;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -875,7 +877,6 @@
     border-radius: 9999px;
     border: none;
     cursor: pointer;
-    transition: normal 0.15s ease-in-out 0s background box-shadow;
     text-decoration: none;
     user-select: none;
     text-align: center;
@@ -940,17 +941,7 @@
     margin-bottom: auto;
     max-width: 550px;
 }
-.ads-mgn > * > h2{
-    text-align: center;
-    color: white;
-    filter: drop-shadow(rgba(0,0,0,0.2) 0px 2px 8px);
-}
-.ads-mgn > * > div{
-    text-align: center;
-    color: white;
-    filter: drop-shadow(rgba(0,0,0,0.2) 0px 2px 8px);
-}
-.ads-mgn > * > span{
+.ads-mgn > * > h2,.ads-mgn > * > div,.ads-mgn > * > span{
     text-align: center;
     color: white;
     filter: drop-shadow(rgba(0,0,0,0.2) 0px 2px 8px);
@@ -1224,13 +1215,11 @@
     padding-bottom: 32px;
     flex: 1 1 0%;
 }
-.section1 > :first-child{
-    margin-bottom: 8px;
-}
 .footh2{
     color: rgb(255, 255, 255);
     font-weight: 500;
     margin-top: 0px !important;
+    margin-bottom: 8px !important;
 }
 .footp1{
     display: flex;
@@ -1277,7 +1266,7 @@
     flex-direction: column;
 }
 .s2padding > * >:first-child{
-    margin-bottom: 8px;
+    
 }
 .mob-goog{
     flex: 1 1 0%;
@@ -1372,8 +1361,6 @@
     color: inherit;
     cursor: pointer;
     transition: filter 0.2s;
-}
-.sec-3 > * + * {
     margin-left: 16px;
 }
 .lst-txt{
